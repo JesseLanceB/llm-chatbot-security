@@ -23,19 +23,42 @@ contributions.
   input testing (OWASP Top 10 2025)
 
 ## My contributions
-- Built and published my own
-  containerized instance of the
-  chatbot for independent testing
-- Ran manual reflected and stored
-  XSS testing against chat input
-  and rendered output. Payloads
-  were sanitized; not exploitable
-  in the tested configuration.
+- Scoped the penetration test and
+  threat model for the chatbot's
+  front end (Open WebUI)
+- Compiled the compliance and
+  organizational requirements for
+  the assessment (PIPEDA, ISO/IEC
+  27001, NIST CSF)
+- Built a STRIDE threat model of
+  AI-specific threats, covering
+  spoofing, tampering and
+  repudiation
+- Documented the environment's
+  existing security issues as a
+  baseline
+- Built the test lab: validated the
+  initial environment, installed
+  testing tools on the VM, deployed
+  my own chatbot instance
+  (jlib3027/chatbot-ollama), and
+  identified deployment issues with
+  a plan to resolve them
+- Tested stored and reflected XSS
+  delivered through model output
+  (OWASP LLM05: Improper Output
+  Handling). Open WebUI sanitized
+  the rendered payloads; not
+  exploitable in the tested
+  configuration.
 - Presented XSS hardening
   recommendations: Content Security
   Policy, context-aware output
   encoding, and sanitized markdown
   rendering
+- Contributed to the penetration
+  testing and final vulnerability
+  assessment report
 
 ## Key findings
 Confirmed:
