@@ -84,6 +84,15 @@ Not present in tested config:
   stored XSS. Open WebUI sanitized
   input and rendered output.
 
+  ## Automated testing (Oct 2026)
+Turned the manual findings into
+repeatable promptfoo tests against
+Phi-3. Baseline: the model blocked
+1 of 7 attacks, and leaked the
+secret key in 3 of 4 leakage tests,
+twice while refusing. Configs and
+results: [promptfoo/](promptfoo/)
+
 ## What I'd change now
 - Our API finding supplied the
   system prompt in the request
@@ -101,9 +110,8 @@ Not present in tested config:
   as untrusted.
 
 ## What's next
-- Automated testing with promptfoo:
-  injection and leakage tests run
-  before and after hardening
-  (in progress, Nov 2026)
+- Hardened promptfoo run: stricter
+  system prompt vs secret removed
+  (Nov 2026)
 - Follow-on: Microsoft Sentinel
   detection lab
