@@ -17,8 +17,7 @@ contributions.
 - Recon: Nmap service discovery
 - LLM testing: Garak, Promptfoo and
   manual prompts, mapped to OWASP
-  LLM Top 10 (LLM01/02/05/06/07/
-  09/10)
+  LLM Top 10 (LLM01/02/05/06/07/09/10)
 - Web testing: OWASP ZAP + manual
   input testing (OWASP Top 10 2025)
 
@@ -84,7 +83,7 @@ Not present in tested config:
   stored XSS. Open WebUI sanitized
   input and rendered output.
 
-  ## Automated testing (Oct 2026)
+## Automated testing (Oct 2026)
 Turned the manual findings into
 repeatable promptfoo tests against
 Phi-3. Baseline: the model blocked
