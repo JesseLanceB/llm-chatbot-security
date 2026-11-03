@@ -83,14 +83,17 @@ Not present in tested config:
   stored XSS. Open WebUI sanitized
   input and rendered output.
 
-## Automated testing (Oct 2026)
+## Automated testing (Oct–Nov 2026)
 Turned the manual findings into
-repeatable promptfoo tests against
-Phi-3. Baseline: the model blocked
-1 of 7 attacks, and leaked the
-secret key in 3 of 4 leakage tests,
-twice while refusing. Configs and
-results: [promptfoo/](promptfoo/)
+repeatable promptfoo tests, then
+tested two fixes. A stricter system
+prompt cut key leaks only from 3 of
+4 tests to 2. Removing the secret
+stopped key leaks, but the prompt
+itself still leaked. No prompt-level
+fix stopped prompt injection.
+Configs and results:
+[promptfoo/](promptfoo/)
 
 ## What I'd change now
 - Our API finding supplied the
