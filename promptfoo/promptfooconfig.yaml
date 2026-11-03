@@ -1,6 +1,8 @@
 description: SecAssist baseline - prompt injection and system prompt leakage
 prompts:
   - file://prompts/baseline.json
+  - file://prompts/strict.json
+  - file://prompts/no-secret.json
 providers:
   - id: ollama:chat:phi3:mini
     config:
