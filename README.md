@@ -112,8 +112,5 @@ Configs and results:
   as untrusted.
 
 ## What's next
-- Hardened promptfoo run: stricter
-  system prompt vs secret removed
-  (Nov 2026)
 - Follow-on: Microsoft Sentinel
   detection lab
